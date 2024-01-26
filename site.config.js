@@ -2,7 +2,7 @@ const CONFIG = {
   // profile setting (required)
   profile: {
     name: "Jiahao Zhou",
-    image: "./public/myavatar.jpeg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: "/avatar.jpeg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "Computer System Researcher",
     bio: "Pursuing a Ph.D. in Computer Systems at IPADS, SJTU",
     email: "jiahaozhou@sjtu.edu.cn",
@@ -69,7 +69,7 @@ const CONFIG = {
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 3600, // revalidate time for [slug], index
+  revalidateTime: 600, // revalidate time for [slug], index
 }
 
 module.exports = { CONFIG }
