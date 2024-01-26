@@ -11,10 +11,10 @@ const CONFIG = {
     instagram: "",
   },
   projects: [
-    {
-      name: `morethan-log`,
-      href: "https://github.com/KendrickChou",
-    },
+    // {
+    //   name: `morethan-log`,
+    //   href: "https://github.com/KendrickChou",
+    // },
   ],
   // blog setting (required)
   blog: {
@@ -69,7 +69,7 @@ const CONFIG = {
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 600, // revalidate time for [slug], index
+  revalidateTime: 300, // revalidate time for [slug], index
 }
 
 module.exports = { CONFIG }
