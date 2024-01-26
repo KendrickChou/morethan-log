@@ -2,7 +2,7 @@ const CONFIG = {
   // profile setting (required)
   profile: {
     name: "Jiahao Zhou",
-    image: "/myavatar.jpeg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: "./public/myavatar.jpeg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "Computer System Researcher",
     bio: "Pursuing a Ph.D. in Computer Systems at IPADS, SJTU",
     email: "jiahaozhou@sjtu.edu.cn",
