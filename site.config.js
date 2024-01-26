@@ -2,7 +2,7 @@ const CONFIG = {
   // profile setting (required)
   profile: {
     name: "Jiahao Zhou",
-    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: "/myavatar.jpeg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "Computer System Researcher",
     bio: "Pursuing a Ph.D. in Computer Systems at IPADS, SJTU",
     email: "jiahaozhou@sjtu.edu.cn",
@@ -62,14 +62,14 @@ const CONFIG = {
     },
   },
   cusdis: {
-    enable: false,
+    enable: fals,
     config: {
       host: "https://cusdis.com",
       appid: "", // Embed Code -> data-app-id value
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 21600 * 7, // revalidate time for [slug], index
+  revalidateTime: 3600, // revalidate time for [slug], index
 }
 
 module.exports = { CONFIG }
